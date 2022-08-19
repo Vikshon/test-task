@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="jquery-plugins/countdowntimer.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>LevelUp</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="name-promo">
+            <h1>LevelUp</h1>
+            <div class="name-promo__image">
+                <!-- <img src="./src/prod.png" alt=""> -->
+            </div>
+            <div class="name-promo__features">
+                <ol>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, voluptates!</li>
+                    <li>Autem accusamus voluptate dolore mollitia ad perferendis consequuntur nesciunt nihil.</li>
+                    <li>Tempore expedita suscipit corporis atque sunt laborum quaerat excepturi quasi.</li>
+                </ol>
+                <button class="scrollBtn">Заказать</button>
+            </div>
+            <video class="video-bg" muted autoplay loop><source src="src/backgronud-video.mp4" type="video/mp4"></video>
+        </div>
+        <div class="composition">
+            <div class="composition__side composition__left">
+                <div class="composition__ingredient-block">
+                    <div class="composition__ingredient-image"></div>
+                    <span class="composition__ingredient-name">Ингредиент</span>
+                </div>
+                <div class="composition__ingredient-block">
+                    <div class="composition__ingredient-image"></div>
+                    <span class="composition__ingredient-name">Ингредиент</span>
+                </div>
+                <div class="composition__ingredient-block">
+                    <div class="composition__ingredient-image"></div>
+                    <span class="composition__ingredient-name">Ингредиент</span>
+                </div>
+            </div>
+            <div class="composition__middle">
+                <button class="scrollBtn">Заказать</button>
+            </div>
+            <div class="composition__side composition__right">
+                <div class="composition__ingredient-block">
+                    <div class="composition__ingredient-image"></div>
+                    <span class="composition__ingredient-name">Ингредиент</span>
+                </div>
+                <div class="composition__ingredient-block">
+                    <div class="composition__ingredient-image"></div>
+                    <span class="composition__ingredient-name">Ингредиент</span>
+                </div>
+                <div class="composition__ingredient-block">
+                    <div class="composition__ingredient-image"></div>
+                    <span class="composition__ingredient-name">Ингредиент</span>
+                </div>
+            </div>
+        </div>
+        <div class="reviews">
+            <div class="reviews__item">
+                <div class="item-reviews__user-info">
+                    <div class="item-reviews__avatar">
+                        <img src="./src/user.jpg" alt="">
+                    </div>
+                    <span class="item-reviews__username">Иванов Иван</span>
+                </div>
+                <div class="item-reviews__message">
+                    <p>Хорошее средство. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore alias illum vero consectetur rem ducimus distinctio tempora sequi deserunt sapiente est voluptates quia architecto, dolor illo provident voluptate quod numquam.</p>
+                </div>
+            </div>
+            <div class="reviews__item">
+                <div class="item-reviews__user-info">
+                    <div class="item-reviews__avatar">
+                        <img src="./src/user.jpg" alt="">
+                    </div>
+                    <span class="item-reviews__username">Иванов Иван</span>
+                </div>
+                <div class="item-reviews__message">
+                    <p>Хорошее средство. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore alias illum vero consectetur rem ducimus distinctio tempora sequi deserunt sapiente est voluptates quia architecto, dolor illo provident voluptate quod numquam.</p>
+                </div>
+            </div>
+            <div class="reviews__item">
+                <div class="item-reviews__user-info">
+                    <div class="item-reviews__avatar">
+                        <img src="./src/user.jpg" alt="">
+                    </div>
+                    <span class="item-reviews__username">Иванов Иван</span>
+                </div>
+                <div class="item-reviews__message">
+                    <p>Плохое средство. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis repellendus, dicta dolor maxime tempora expedita quisquam earum placeat! Velit, neque possimus odio esse adipisci aut sapiente numquam hic quasi quisquam soluta doloribus nesciunt laborum explicabo accusantium animi similique reiciendis! Omnis.</p>
+                </div>
+            </div>
+        </div>
+        <div class="desc-promo">
+            <div class="desc-promo__demo">
+                <img src="./src/demo.png" alt="">
+            </div>
+            <div class="desc-promo__description">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum repellat autem assumenda. Architecto vitae voluptate, assumenda maiores corporis iusto ipsum cum excepturi est nemo. Nisi, deleniti quidem? Est, vero delectus.</p>
+                <button class="scrollBtn">Заказать</button>
+            </div>
+            <div class="desc-promo__features">
+                <ol> Преимущества
+                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, accusantium.</li>
+                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias aliquid aliquam incidunt aut dolor unde excepturi. Tenetur minima sunt expedita.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                </ol>
+            </div>
+        </div>
+        <div class="order-form">
+            <div class="order-form__product-name">
+                <h2>LevelUp</h2>
+            </div>
+            <div class="order-form__discount">
+                <span class="order-form__timer counter"></span>
+                <span class="order-form__price">3000 ₽</span>
+                <span class="order-form__bonus-price">1999 ₽</span>
+            </div>
+            <div class="order-form__form-wrapper">
+                <form action="" class="order-form__form" id="orderForm">
+                    <label for="username">Имя пользователя</label>
+                    <span class="order-form__input-wrapper" data-hint="Пр.: Иванов Иван">
+                        <input type="text" id="username">
+                    </span>
+                    <label for="phone">Номер телефона</label>
+                    <span class="order-form__input-wrapper" data-hint="Пр.: +79998887766">
+                        <input type="text" id="phone" value="+7">
+                    </span>
+                    <input type="submit" id="orderBtn" value="Заказать"></input>
+                </form>
+            </div>
+            <div class="order-form__image">
+                <img src="./src/prod.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
